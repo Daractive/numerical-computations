@@ -3,9 +3,9 @@ clc
 
 fp = fopen('output.txt', 'a');
 for run = 1:5
-		fprintf(fp, "Seria numer: %d\n", run);
+		fprintf(fp, "Run: %d\n", run);
 		for n = 1000:200:4000
-			fprintf(fp, "Rozmiar danych: %d\n", n);
+			fprintf(fp, "Data size: %d\n", n);
 				%==============================
 				%Matrix computations
 				%==============================
@@ -172,7 +172,7 @@ for run = 1:5
 		end
         
 		for n = 1000:600:10000
-			fprintf(fp, "Rozmiar danych: %d\n", n);
+			fprintf(fp, "Data size: %d\n", n);
 			    %==============================
 				%GARCH log-likelihood
 				%==============================

@@ -5,9 +5,9 @@ using Statistics
 
 fp = open("output.txt", "a")
 for run in 1:5
-    write(fp, "Seria numer: "*string(run)*"\n")
+    write(fp, "Run: "*string(run)*"\n")
     for n in 1000:200:4000
-        write(fp, "Rozmiar danych: "*string(n)*"\n")
+        write(fp, "Data size: "*string(n)*"\n")
         # ==============================
 		#Matrix computations
 		# ==============================
@@ -157,7 +157,7 @@ for run in 1:5
     end
 
     for n in 1000:600:10000
-        write(fp, "Rozmiar danych: "*string(n)*"\n")
+        write(fp, "Data size: "*string(n)*"\n")
         # ==============================
 		#GARCH log-likelihood
 		# ==============================
